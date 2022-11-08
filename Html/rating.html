@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/ratings.css">
+    <title>Interactive ratings</title>
+</head>
+<body>
+    <main>
+
+        <!-- First card -->
+        <div class="container">
+            <div class="card">
+                <div class="favorite">
+                    <img src="../images/icon-star.svg" alt="" class="favorite_star">
+                </div>
+
+                <div class="feedback">
+                    <div class="feedback_title">
+                        <h3>How did we do?</h3>
+                    </div>
+                    <div class="feedback_text">
+                        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                    </div>
+                </div>
+
+                <div class="numbers">
+                    <div class="card-rating">
+                        <div class="card-rating_number one">
+                            1
+                        </div>                      
+                        <div class="card-rating_number two">
+                            2
+                        </div>                      
+                        <div class="card-rating_number three">
+                            3
+                        </div>                      
+                        <div class="card-rating_number four">
+                            4
+                        </div>                      
+                        <div class="card-rating_number five">
+                            5
+                        </div>                      
+                    </div>
+                </div>
+
+                <div class="card_paragraph-one">
+
+                </div>
+
+                <div class="submit">
+                    <input type="button" value="submit">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Second card -->
+        <div class="container-two">
+            <div class="card_two">
+                <div class="card_img">
+                    <img src="../images/illustration-thank-you.svg" alt="" class="card_two_logo">
+                </div>
+
+                <div class="card_paragraph-two">
+                    <p>You selected <span class="paragraph"></span> out of 5</p>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_title">
+                        <h3>Thank you!</h3>
+                    </div>
+                    <div class="card_body_text">
+                        <p>We appreciate you taking the time to give a rating. if you ever need more support, don't hesitate to get in touch!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="../js/ratings.js"></script>
+</body>
+</html>

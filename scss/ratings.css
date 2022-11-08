@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(216deg, 12%, 8%);
+  width: 300px;
+}
+
+main {
+  background: hsl(213deg, 19%, 18%);
+  margin: 1.5rem;
+  border-radius: 0.8rem;
+}
+
+.card {
+  padding: 1rem;
+}
+
+.favorite {
+  background: hsl(213deg, 18%, 27%);
+  border-radius: 0.8rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.favorite .favorite_star {
+  height: 0.6rem;
+  width: 0.6rem;
+}
+
+.feedback_title {
+  color: hsl(0deg, 0%, 100%);
+  padding-top: 1rem;
+  font-weight: 700;
+  font-family: Helvetica, sans-serif;
+}
+
+.feedback_text {
+  color: hsl(216deg, 12%, 54%);
+  padding-top: 1rem;
+  font-size: 0.68rem;
+  width: 85%;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.2rem;
+}
+
+.card-rating {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  padding-top: 1rem;
+}
+.card-rating .card-rating_number {
+  background: hsl(213deg, 18%, 27%);
+  height: 5vh;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10.8rem;
+  font-size: 0.75rem;
+  color: hsl(0deg, 0%, 100%);
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+}
+.card-rating .card-rating_number:hover {
+  background: hsl(213deg, 19%, 18%);
+}
+
+.submit {
+  padding-top: 1rem;
+}
+
+input {
+  background-color: hsl(25deg, 97%, 53%);
+  width: 200px;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  outline: none;
+  border: none;
+  color: hsl(0deg, 0%, 100%);
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  letter-spacing: 0.15rem;
+  font-family: Helvetica, sans-serif;
+}
+input:hover {
+  background: hsl(25deg, 87%, 44%);
+}
+
+.card_two {
+  padding: 1rem;
+  text-align: center;
+}
+.card_two .card_two_logo {
+  height: 3.6rem;
+}
+
+.card_paragraph-two {
+  color: hsl(25deg, 97%, 53%);
+  font-size: 0.78rem;
+  padding-top: 1rem;
+  border-radius: 0.8rem;
+}
+
+.card_body {
+  padding-top: 1rem;
+}
+.card_body .card_body_title {
+  color: hsl(0deg, 0%, 100%);
+  font-family: Helvetica, sans-serif;
+}
+
+.card_body_text {
+  color: hsl(216deg, 12%, 54%);
+  font-size: 0.88rem;
+  padding-top: 1rem;
+}/*# sourceMappingURL=ratings.css.map */

@@ -1,0 +1,148 @@
+@import './resets';
+@import './variables';
+
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin numberFlex {
+    display: flex;
+   justify-content: space-between;
+   width: $width-text;
+}
+
+@mixin padding($top ) {
+    padding-top:$top;
+}
+
+@mixin margin($top) {
+    margin-top: $top;
+}
+
+body {
+    background: $body-color;
+    width: $width;
+}
+
+main {
+    background: $card-color;
+    margin: 1.5rem;
+    border-radius: $default-border-radius; 
+}
+
+.card {
+    padding: 1rem;
+}
+
+.favorite{
+    background: $star-color; 
+    border-radius: $default-border-radius;
+    height: $default-border-height;
+    width: $default-border-width;
+    @include flexCenter();
+
+        #{&}_star {
+            height: $inner-circle-size-height;
+            width: $inner-circle-size-width;
+        }
+}
+
+.feedback_title {
+    color: $title-color;
+    @include padding($top);
+    font-weight: weight(bold);
+    font-family: $font-stack;
+}
+
+.feedback_text {
+    color: $text-color;
+    @include padding($top);
+    font-size: $text-font-size;
+    width: $width-text;
+    font-family: $font-stack;
+    line-height: 1.2rem;
+}
+
+.card-rating {
+    @include numberFlex();
+    @include padding($top);
+
+        #{&}_number {
+            background: $star-color;
+            height: 5vh;
+            width: $width - 270;
+            @include flexCenter();
+            border-radius: $default-border-radius + 10;
+            font-size: .75rem;
+            color: $title-color;
+            font-family: $font-stack;
+            cursor: pointer;
+
+                &:hover {
+                    background: $card-color;
+                }
+        } 
+}
+
+.submit {
+    @include padding($top);
+    
+}
+
+input {
+    background-color: $button-color;
+    width: $width - 100;
+    cursor: pointer;
+    padding: .50rem;
+    border-radius: $default-border-radius;
+    outline: none;
+    border: none;
+    color: $title-color;
+    text-transform: uppercase;
+    font-size: $text-font-size;
+    letter-spacing: .15rem;
+    font-family: $font-stack;
+
+        &:hover {
+            background:  hsl(25, 87%, 44%);
+        }
+}
+
+// Second card
+.card_two {
+    padding: 1rem;
+    text-align: center;
+
+        #{&}_logo {
+            height: $inner-circle-size-height + 3;
+        }
+}
+
+.card_paragraph-two {
+    color: $button-color;
+    font-size: $text-font-size + .10;
+    @include padding($top);
+    border-radius: $default-border-radius;
+} 
+
+.card_body {
+    @include padding($top);
+
+        #{&}_title {
+            color: $title-color;
+            font-family: $font-stack;
+        }
+}
+
+.card_body_text {
+    color: $text-color;
+    font-size: $text-font-size + .20;
+    @include padding($top);
+
+}
